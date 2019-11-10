@@ -1,3 +1,3 @@
 let playerMove = 'papier';
 
-printMessage('Zagrałem'+ playerMove + '! Jeśli Twój ruch to nozyce, to wygrywasz!');
+printMessage('Zagrałem' + playerMove + '! Jeśli Twój ruch to nozyce, to wygrywasz!');
