@@ -84,8 +84,15 @@ let buttonRock = document.getElementById('play-rock');
 let buttonScissors = document.getElementById('play-scissors');
 let buttonPaper = document.getElementById('play-paper');
 
-buttonRock.addEventListener('click',function(){
+buttonRock.addEventListener('click', function () {
   printMessage('Zagrałeś kamień');
 }
 );
-
+buttonScissors.addEventListener('click', function () {
+  printMessage('Zagrałeś nozyce');
+}
+);
+buttonPaper.addEventListener('click', function () {
+  printMessage('Zagrałeś papier');
+}
+);
