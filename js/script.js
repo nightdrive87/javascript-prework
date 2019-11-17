@@ -85,14 +85,14 @@ let buttonScissors = document.getElementById('play-scissors');
 let buttonPaper = document.getElementById('play-paper');
 
 buttonRock.addEventListener('click', function () {
-  printMessage('Zagrałeś kamień');
+  playGame(1);
 }
 );
 buttonScissors.addEventListener('click', function () {
-  printMessage('Zagrałeś nozyce');
+  playGame(3);
 }
 );
 buttonPaper.addEventListener('click', function () {
-  printMessage('Zagrałeś papier');
+  playGame(2);
 }
 );
