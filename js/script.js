@@ -1,10 +1,10 @@
-function playGame(playerInput) {
+const playGame = function(playerInput) {
   clearMessages();
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
 
   console.log('Wylosowana liczba to: ' + randomNumber);
 
-  function getMoveName(argMoveId) {
+  const getMoveName = function(argMoveId) {
     if (argMoveId == 1) {
       console.log('wybrano liczbe 1');
       return 'kamień';
@@ -20,7 +20,7 @@ function playGame(playerInput) {
     return 'nieznany ruch';
   }
 
-  function displayResult(argComputerMove, argPlayerMove) {
+  const displayResult = function(argComputerMove, argPlayerMove) {
 
     console.log('moves:', argComputerMove, argPlayerMove);
 
@@ -65,7 +65,7 @@ function playGame(playerInput) {
     }
   }
 
-  let computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
 
   printMessage('Mój ruch to: ' + computerMove);
 
@@ -73,16 +73,16 @@ function playGame(playerInput) {
 
   console.log('Gracz wpisał: ' + playerInput);
 
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
 
   printMessage('Twój ruch to: ' + playerMove);
 
-  let result = displayResult(computerMove, playerMove);
+  const result = displayResult(computerMove, playerMove);
   printMessage(result);
 }
-let buttonRock = document.getElementById('play-rock');
-let buttonScissors = document.getElementById('play-scissors');
-let buttonPaper = document.getElementById('play-paper');
+const buttonRock = document.getElementById('play-rock');
+const buttonScissors = document.getElementById('play-scissors');
+const buttonPaper = document.getElementById('play-paper');
 
 buttonRock.addEventListener('click', function () {
   playGame(1);
